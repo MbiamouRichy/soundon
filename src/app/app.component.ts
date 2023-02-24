@@ -13,7 +13,7 @@ export class AppComponent {
       let i = img.id;
       let bg = document.querySelector('.bg');
       // @ts-ignore
-      let chg = bg.getAttribute("src");
+      let chg: string | null;
 
       if (i == "1"){
         chg = "assets/D00qO4pA.jpg"
