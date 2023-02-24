@@ -105,8 +105,15 @@ button{
 nav{
   position: fixed;
   bottom: 10px;
-  left: 35%;
-  width: auto;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.div_image{
   background-image: linear-gradient(135deg, rgb(220, 139, 32), rgb(207, 62, 15));
   border-radius: 50px;
   padding: 3px 5px;
@@ -117,3 +124,56 @@ nav button{
   padding: 10px 30px;
   margin: 3px;
 }
+
+/*-------------------- responsive -----------------*/
+@media only screen and (max-width: 1024px) {
+  .titre{
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 870px){
+  button{
+    padding: 20px 50px;
+  }
+  .nav_texte .nav_link, .se_connecter, .texte, button {
+    font-size: 15.5px;
+    font-weight: 500;
+  }
+  .div_main div{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav_texte ul{
+    display: none;
+  }
+}
+@media only screen and (max-width: 456px) {
+  header, .div_main{
+    padding: 20px;
+  }
+  .titre{
+    font-size: 2rem;
+  }
+  button{
+    padding: 20px 20px;
+  }
+  .nav_texte .nav_link, .se_connecter, .texte, button {
+    font-size: 13.5px;
+  }
+}
+@media only screen and (max-width: 364px) {
+  .titre{
+    font-size: 2rem;
+  }
+  button{
+    padding: 10px 10px;
+  }
+  .nav_texte .nav_link, .se_connecter, .texte{
+    font-size: 15.5px;
+  }
+  nav button{
+    padding: 5px 5px;
+  }
+}
+
