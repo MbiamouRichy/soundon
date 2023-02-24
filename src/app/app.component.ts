@@ -32,7 +32,7 @@ export class AppComponent {
     if (document.body.offsetWidth < 1024){
       let br = document.querySelector('.texte br')
       // @ts-ignore
-      br.style.display='none'
+      br.style.display='none';
     }
   }
 }
